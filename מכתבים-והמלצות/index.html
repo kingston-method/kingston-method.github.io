@@ -118,16 +118,6 @@
                 >דפי מידע על הספרים</a
               >
             </li>
-            <li class="menu-item-14">
-              <a
-                href="../%d7%99%d7%a6%d7%99%d7%a8%d7%aa-%d7%94%d7%a7%d7%a9%d7%a8/index.html"
-                title="יצירת הקשר"
-                >יצירת הקשר</a
-              >
-            </li>
-            <!--
-              <li class="menu-item-14"><a href="../misc.html" title="נספח">נספח</a> </li>
-            -->
           </ul>
         </nav>
         <div class="art-layout-wrapper editable">
@@ -372,7 +362,7 @@
               class="footer1"
               style="border-top: 1px dotted silver;padding-top: 14px;margin-top: 14px;"
             >
-              כל הזכויות שמורות © 2015 <br />
+              כל הזכויות שמורות © <span id="year">2019</span> <br />
               "בריאות מחוצפת", שיטת קינגסטון קליניק
             </p>
             <div class="menu">
@@ -396,15 +386,6 @@
                     >דפי מידע על הספרים</a
                   >
                 </li>
-                <li class="page_item page-item-14">
-                  <a
-                    href="../%d7%99%d7%a6%d7%99%d7%a8%d7%aa-%d7%94%d7%a7%d7%a9%d7%a8/index.html"
-                    >יצירת הקשר</a
-                  >
-                </li>
-                <!--
-                  <li class="page_item page-item-14"><a href="misc.html" title="נספח">נספח</a> </li>
-                -->
               </ul>
             </div>
           </div>
@@ -436,6 +417,8 @@
         msRequestAnimationFrame;
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
+
+      document.getElementById('year').innerText = new Date().getFullYear();
     </script>
     <script
       type="text/javascript"
